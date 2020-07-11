@@ -1,0 +1,42 @@
+{
+  "name": "admin-portal",
+  "version": "1.0.0",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cookie-session": "^1.4.0",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "firebase": "^7.14.2",
+    "firebase-admin": "^8.12.0",
+    "firebase-functions": "^3.3.0",
+    "forever": "^2.0.0",
+    "http-errors": "~1.6.3",
+    "js-alert": "^1.0.4",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2",
+    "package": "^1.0.1",
+    "router": "^1.3.3",
+    "stripe": "^8.52.0",
+    "uuid": "^8.0.0"
+  },
+  "author": "senthil",
+  "license": "ISC",
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}

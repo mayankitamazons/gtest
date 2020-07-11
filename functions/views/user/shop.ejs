@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Fashi Template" />
+    <meta name="keywords" content="Fashi, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RAJ SHOPPING SITE</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/css_ui/bootstrap.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css_ui/font-awesome.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css_ui/themify-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/elegant-icons.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css_ui/owl.carousel.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css_ui/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/style.css" type="text/css" />
+<style>
+
+li {
+
+list-style-type: none;
+
+
+}
+</style>
+
+
+
+
+  </head>
+
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+      <div class="container">
+        <div class="inner-header">
+          <div class="row">
+            <div class="col-lg-2 col-md-2">
+              <div class="logo">
+                <a href="/user/shop">
+                  <table>
+                    <tr>
+                      <td class="text-center">
+                        <h5><b>MARKET AT DOOR</b></h5>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                        <img src="/img_ui/logo2.png" alt="" />
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+              <div class="advanced-search">
+                <!-- <button type="button" class="category-btn">
+                  All Categories
+                </button> -->
+                <form action="#" class="input-group">
+                  <input
+                    type="text"
+                    id="search_pattern"
+                    placeholder="What do you need?"
+                  />
+                  <button id="search_button" type="button">
+                    <i class="ti-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- cart -->
+            <%- include("../partials/cart") %>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="nav-item">
+          <div class="container">
+            <nav class="nav-menu mobile-menu">
+              <%- include("../partials/user_menu") %>
+            </nav>
+            <div id="mobile-menu-wrap"></div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <!-- <div class="filter-widget">
+              <h4 class="fw-title">Category...</h4>
+              <div id="categories"></div>
+            </div> -->
+
+            <h5 style="color: grey;"><b>Search by Category</b></h5>
+            <br>
+
+            <div id="demo" class="carousel slide " data-ride="carousel">
+              <!-- Indicators -->
+              <!-- <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+           -->
+              <style>
+                .carousel-item-left,
+                .carousel-item-right,
+                .active {
+                  display: flex !important;
+                  justify-content: space-around;
+                }
+              </style>
+              <!-- The slideshow -->
+              <div class="carousel-inner ">
+                <div id="categories"></div>
+              </div>
+        
+              <!-- Left and right controls -->
+              <a
+                class="carousel-control-prev"
+                href="#demo"
+                data-slide="prev"
+                style="width:10%;"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#demo"
+                data-slide="next"
+                style="width:10%;"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+
+            <!-- <div class="filter-widget">
+              <h4 class="fw-title">Select price range:</h4>
+              <div class="filter-range-wrap">
+                <div class="range-slider">
+                  <div class="price-input">
+                    <input type="text" id="minamount" placeholder="min" />
+                    <input type="text" id="maxamount" placeholder="max" />
+                  </div>
+                </div>
+                <div
+                  class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                  data-min="0"
+                  data-max="90000"
+                >
+                  <div
+                    class="ui-slider-range ui-corner-all ui-widget-header"
+                  ></div>
+                  <span
+                    tabindex="0"
+                    class="ui-slider-handle ui-corner-all ui-state-default"
+                  ></span>
+                  <span
+                    tabindex="90000"
+                    class="ui-slider-handle ui-corner-all ui-state-default"
+                  ></span>
+                </div>
+              </div>
+              <a href="#" class="filter-btn">Filter</a>
+            </div> -->
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="col-lg-9 order-1 order-lg-2">
+              <h5 style="color: grey;padding-left:5%;"><b>Products</b></h5>
+              <br>
+            <div class="product-list">
+              <div class="row" id="products"></div>
+            </div>
+            <div class="loading-more">
+              <i class="icon_loading"></i>
+              <a href="#">
+                Load More
+              </a>
+            </div>
+          </div>
+
+        <!-- <div
+          style="background-color: orangered;padding:10px;color:white;width:120px"
+        >
+          <div id="category">
+            Category
+
+            <div id="categories"></div>
+          </div>
+        </div> -->
+      </div> 
+
+        <!-- <div class="nav-item">
+          <div class="container">
+            <div id="mobile-menu-wrap">
+              <ul>
+                <li id="category">
+                  Category
+                  <ul>
+                    <div class="filter-widget">
+                      <div id="categories"></div>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </header>
+    <-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <!-- Breadcrumb Section Begin -->
+
+    <!-- Product Shop Section Begin -->
+    <!-- <section class="product-shop spad">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter"
+          >
+          
+          
+        </div>
+      </div>
+    </section> -->
+    <!-- Product Shop Section End -->
+
+    <!-- Partner Logo Section Begin -->
+
+    <!-- Partner Logo Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-left">
+              <div class="footer-logo">
+                <a href="/user/shop">
+                  <h4 style="color: white;">
+                    <b><u>MARKET AT DOOR</u></b>
+                  </h4>
+                </a>
+              </div>
+              <ul>
+                <li>Phone: +91 8093908739/ 9973215832</li>
+                <li>Email: official@marketatdoor.in</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-1">
+            <div class="footer-widget">
+              <h5>Information</h5>
+              <ul>
+                <li><a href="/user/aboutus">About Us</a></li>
+                <li><a href="/user/suggestion">Any suggestions?</a></li>
+                <li><a href="/user/contactus">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="newslatter-item">
+              <h5>Join Our Newsletter Now</h5>
+              <p>
+                Get E-mail updates about our latest shop and special offers.
+              </p>
+              <form action="/user/newsletter" class="subscribe-form">
+                <input type="text" placeholder="Enter Your Mail" />
+                <button type="button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="/js_ui/jquery-3.3.1.min.js"></script>
+    
+    <script src="/js_ui/popper.min.js"></script>
+    <script src="/js_ui/bootstrap.min.js"></script>
+    <script src="/js_ui/jquery-ui.min.js"></script>
+    <script src="/js_ui/jquery.countdown.min.js"></script>
+    <script src="/js_ui/jquery.nice-select.min.js"></script>
+    <script src="/js_ui/jquery.zoom.min.js"></script>
+    <script src="/js_ui/jquery.dd.min.js"></script>
+    <script src="/js_ui/jquery.slicknav.js"></script>
+    <script src="/js_ui/owl.carousel.min.js"></script>
+    <script src="/js_ui/main.js"></script>
+    <script src="/myjs/shop.js"></script>
+  </body>
+</html>

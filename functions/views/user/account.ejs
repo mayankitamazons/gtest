@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Fashi Template" />
+    <meta name="keywords" content="Fashi, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Raj site</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/css_ui/bootstrap.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css_ui/font-awesome.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css_ui/themify-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/elegant-icons.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css_ui/owl.carousel.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css_ui/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css_ui/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
+    <header class="header-section">
+      <div class="container">
+        <div class="inner-header">
+          <div class="row">
+            <div class="col-lg-2 col-md-2">
+              <div class="logo">
+                <a href="/user/shop">
+                  <table>
+                    <tr>
+                      <td class="text-center">
+                        <h5><b>MARKET AT DOOR</b></h5>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                        <img src="/img_ui/logo2.png" alt="" />
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+              <br /><br />
+              <!-- <div class="advanced-search">
+                <button type="button" class="category-btn">
+                  All Categories
+                </button>
+                <form action="#" class="input-group">
+                  <input type="text" placeholder="What do you need?" />
+                  <button type="button"><i class="ti-search"></i></button>
+                </form>
+              </div> -->
+            </div>
+            <!-- cart -->
+            <%- include("../partials/cart") %>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="container">
+          <nav class="nav-menu mobile-menu">
+            <%- include("../partials/user_menu") %>
+          </nav>
+          <div id="mobile-menu-wrap"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Breadcrumb Section Begin -->
+    <!-- Breadcrumb Section Begin -->
+    <!-- Shopping Cart Section Begin -->
+    <section class="contact-section spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="contact-title">
+              <h4>Account</h4>
+              <p>Your Acoount details:</p>
+            </div>
+            <div class="contact-widget">
+              <div class="cw-item">
+                <div class="#">
+                  <img width="40px" height="35px" src="/img_ui/user_logo.jpg" />
+                </div>
+                <div class="ci-text">
+                  <span>Name:</span>
+                  <p><%=data.name%></p>
+                </div>
+              </div>
+              <div class="cw-item">
+                <div class="#">
+                  <img width="30px" height="25px" src="/img_ui/mob.jpg" />
+                </div>
+                <div class="ci-text">
+                  <span>Phone:</span>
+                  <p><%=data.phone%></p>
+                </div>
+              </div>
+              <div class="cw-item">
+                <div class="#">
+                  <img width="30px" height="25px" src="/img_ui/mail.png" />
+                </div>
+                <div class="ci-text">
+                  <span>Email:</span>
+                  <p><%=data.email%></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Shopping Cart Section End -->
+    <!-- Partner Logo Section Begin -->
+
+    <!-- Partner Logo Section End -->
+    <!-- Footer Section Begin -->
+    <!-- <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-left">
+              <div class="footer-logo">
+                <a href="/user/shop">
+                  <h4 style="color: white;">
+                    <b><u>MARKET AT DOOR</u></b>
+                  </h4>
+                </a>
+              </div>
+              <ul>
+                <li>Phone: +91 8093908739/ 9973215832</li>
+                <li>Email: official@marketatdoor.in</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-1">
+            <div class="footer-widget">
+              <h5>Information</h5>
+              <ul>
+                <li><a href="/user/aboutus">About Us</a></li>
+                <li><a href="/user/suggestion">Any suggestions?</a></li>
+                <li><a href="/user/contactus">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-widget">
+              <h5>My Account</h5>
+              <ul>
+                <li><a href="/user/shop">My Account</a></li>
+                <li><a href="/user/checkout">Checkout</a></li>
+                <li><a href="/user/showcart">Shopping Cart</a></li>
+                <li><a href="/user/shop">Shop</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="newslatter-item">
+              <h5>Join Our Newsletter Now</h5>
+              <p>
+                Get E-mail updates about our latest shop and special offers.
+              </p>
+              <form action="/user/newsletter" class="subscribe-form">
+                <input type="text" placeholder="Enter Your Mail" />
+                <button type="button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="/js_ui/jquery-3.3.1.min.js"></script>
+    <script src="/js_ui/bootstrap.min.js"></script>
+    <script src="/js_ui/jquery-ui.min.js"></script>
+    <script src="/js_ui/jquery.countdown.min.js"></script>
+    <script src="/js_ui/jquery.nice-select.min.js"></script>
+    <script src="/js_ui/jquery.zoom.min.js"></script>
+    <script src="/js_ui/jquery.dd.min.js"></script>
+    <script src="/js_ui/jquery.slicknav.js"></script>
+    <script src="/js_ui/owl.carousel.min.js"></script>
+    <script src="/js_ui/main.js"></script>
+  </body>
+</html>

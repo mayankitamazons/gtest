@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+  </head>
+  <body style="overflow-x: hidden;">
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <div class="card mt-3">
+            <div class="card-header">
+              <b>Add Product</b>
+            </div>
+            <form
+              id="myform"
+              action="/product/submit"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <div class="card-body register">
+                <p class="card-text">
+                  <b>Product details</b>
+                </p>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Product Name </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Choose file </label>
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      name="image"
+                      class="custom-file-input"
+                      id="inputGroupFile02"
+                    />
+                    <label
+                      class="custom-file-label"
+                      for="inputGroupFile02"
+                      aria-describedby="inputGroupFileAddon02"
+                      >Choose file</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Category </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="category"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Company Name </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="comp_name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Size</label>
+                  <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="size"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">GSTIN</label>
+                  <input
+                    required
+                    type="text"
+                    class="form-control"
+                    name="gstin"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Base Price</label>
+                  <input
+                    required
+                    type="number"
+                    class="form-control"
+                    name="base_price"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="formGroupExampleInput">MRP</label>
+                  <input
+                    required
+                    type="number"
+                    class="form-control"
+                    name="mrp"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Stock</label>
+                  <input
+                    required
+                    type="number"
+                    class="form-control"
+                    name="stock"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    style="width : 100%"
+                    class="btn btn-primary"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+  <script src="/javascripts/popper.js"></script>
+</html>

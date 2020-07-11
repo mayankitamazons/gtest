@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raj site</title>
+
+    <!-- for making products responsive -->
+
+    <!-- for making products responsive -->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/css_ui/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/css_ui/style.css" type="text/css">
+    <link rel="stylesheet" href="/slick.css">
+    <link rel="stylesheet" href="/slick-theme.css">
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                          <a href="/user/shop">
+                            <table>
+                              <tr>
+                                <td class="text-center">
+                                  <h5><b>MARKET AT DOOR</b></h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                  <img src="/img_ui/logo2.png" alt="" />
+                                </td>
+                              </tr>
+                            </table>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-7">
+                            <br /><br />
+                            <!-- <div class="advanced-search">
+                              <button type="button" class="category-btn">
+                                All Categories
+                              </button>
+                              <form action="#" class="input-group">
+                                <input type="text" placeholder="What do you need?" />
+                                <button type="button"><i class="ti-search"></i></button>
+                              </form>
+                            </div> -->
+                          </div>
+
+                          <!-- cart -->
+                          <%- include("../partials/cart") %>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="container">
+                <nav class="nav-menu mobile-menu">
+                    <%- include("../partials/user_menu") %>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    
+    <!-- Breadcrumb Section Begin -->
+
+    <!-- Product Shop Section Begin -->
+    <section class="product-shop spad page-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="product-pic-zoom">
+                                <img class="product-big-img" src="/images/<%=product.image%>" alt="">
+                                <div class="zoom-icon">
+                                    <i class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <!-- <div class="product-thumbs">
+                                <div class="product-thumbs-track ps-slider owl-carousel">
+                                    <div class="pt active" data-imgbigurl="/img_ui/product-single/product-1.jpg"><img
+                                            src="/img_ui/product-single/product-1.jpg" alt=""></div>
+                                    <div class="pt" data-imgbigurl="/img_ui/product-single/product-2.jpg"><img
+                                            src="/img_ui/product-single/product-2.jpg" alt=""></div>
+                                    <div class="pt" data-imgbigurl="/img_ui/product-single/product-3.jpg"><img
+                                            src="/img_ui/product-single/product-3.jpg" alt=""></div>
+                                    <div class="pt" data-imgbigurl="/img_ui/product-single/product-3.jpg"><img
+                                            src="/img_ui/product-single/product-3.jpg" alt=""></div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-details">
+                                <div class="pd-title">
+                                    <span><%=product.comp_name%></span>
+                                    <h3><%=product.name%></h3>
+                                    <a href="#" class="heart-icon"><i class="icon_heart_alt"></i></a>
+                                </div>
+                                <!-- <div class="pd-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(5)</span>
+                                </div> -->
+                                <div class="pd-desc">
+                                    <h4>Rs <%=product.sp%> <span>RS <%=product.msp%></span></h4>
+                                    Unit: <%=product.unit%>
+                                </div>
+                                <!-- <div class="pd-color">
+                                    <h6>Color</h6>
+                                    <div class="pd-color-choose">
+                                        <div class="cc-item">
+                                            <input type="radio" id="cc-black">
+                                            <label for="cc-black"></label>
+                                        </div>
+                                        <div class="cc-item">
+                                            <input type="radio" id="cc-yellow">
+                                            <label for="cc-yellow" class="cc-yellow"></label>
+                                        </div>
+                                        <div class="cc-item">
+                                            <input type="radio" id="cc-violet">
+                                            <label for="cc-violet" class="cc-violet"></label>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="pd-size-choose">
+                                    <div class="sc-item">
+                                        <input type="radio" id="sm-size">
+                                        <label for="sm-size">s</label>
+                                    </div>
+                                    <div class="sc-item">
+                                        <input type="radio" id="md-size">
+                                        <label for="md-size">m</label>
+                                    </div>
+                                    <div class="sc-item">
+                                        <input type="radio" id="lg-size">
+                                        <label for="lg-size">l</label>
+                                    </div>
+                                    <div class="sc-item">
+                                        <input type="radio" id="xl-size">
+                                        <label for="xl-size">xs</label>
+                                    </div>
+                                </div> -->
+                                <div class="pd-size-choose">
+                                        <%  products.forEach(function(item){  %>
+                                            <% if(item.unit==product.unit){ %>
+                                    <div class="sc-item">
+                                        <input type="radio" id="sm-size">
+                                        <label for="sm-size" class="active"> <%= item.unit%> </label>
+                                    </div>
+                                    <%} else {%>
+                                        <div onClick="window.location = '/product/showforuser/<%=item.product_id%>/<%=item.unit%>';" class="sc-item">
+                                                <input type="radio" id="sm-size">
+                                                <label for="sm-size"> <%= item.unit%> </label>
+                                            </div>
+                                            <% } %>
+                                       <%})%>
+                                </div>
+                                <form id="myform" action="/user/add_to_cart/<%=product.product_id%>/1/<%=product.unit%>" method="post">
+                                <div class="quantity">
+                                    <div class="pro-qty">
+                                        <input name="quantity" type="text" value="1">
+                                    </div>
+                                    <button type="submit" class="primary-btn pd-cart">Add To Cart</button>
+                                </div>
+                                </form>
+
+                                <ul class="pd-tags">
+                                    <li><span>CATEGORY</span>: <%=product.categoryName%></li>
+                                </ul>
+                                <div class="pd-share">
+                                    <div class="p-code">Product Id : <%=product.product_id%></div>
+                                    <div class="pd-social">
+                                        <a href="#"><i class="ti-facebook"></i></a>
+                                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                                        <a href="#"><i class="ti-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-tab">
+                        <div class="tab-item">
+                            <ul class="nav" role="tablist">
+                                <li>
+                                    <a class="active" data-toggle="tab" href="#tab-1" role="tab">DESCRIPTION</a>
+                                </li>
+                                <!-- <li>
+                                    <a data-toggle="tab" href="#tab-2" role="tab">SPECIFICATIONS</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#tab-3" role="tab">Customer Reviews (02)</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-item-content">
+                            <div class="tab-content">
+                                <div class="tab-pane fade-in active" id="tab-1" role="tabpanel">
+                                    <div class="product-content">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+                                                <h5>Details</h5>
+                                                <p><%=product.descr%></p>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <img src="/images/<%=product.image%>" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                                    <div class="specification-table">
+                                        <table>
+                                            <tr>
+                                                <td class="p-catagory">Customer Rating</td>
+                                                <td>
+                                                    <div class="pd-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <span>(5)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Price</td>
+                                                <td>
+                                                    <div class="p-price">$495.00</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Add To Cart</td>
+                                                <td>
+                                                    <div class="cart-add">+ add to cart</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Availability</td>
+                                                <td>
+                                                    <div class="p-stock">22 in stock</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Weight</td>
+                                                <td>
+                                                    <div class="p-weight">1,3kg</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Size</td>
+                                                <td>
+                                                    <div class="p-size">Xxl</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Color</td>
+                                                <td><span class="cs-color"></span></td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td class="p-catagory">Sku</td>
+                                                <td>
+                                                    <div class="p-code">00012</div>
+                                                </td>
+                                            </tr> -->
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-3" role="tabpanel">
+                                    <div class="customer-review-option">
+                                        <h4>2 Comments</h4>
+                                        <div class="comment-option">
+                                            <div class="co-item">
+                                                <div class="avatar-pic">
+                                                    <img src="/img_ui/product-single/avatar-1.png" alt="">
+                                                </div>
+                                                <div class="avatar-text">
+                                                    <div class="at-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <h5>Brandon Kelley <span>27 Aug 2019</span></h5>
+                                                    <div class="at-reply">Nice !</div>
+                                                </div>
+                                            </div>
+                                            <div class="co-item">
+                                                <div class="avatar-pic">
+                                                    <img src="/img_ui/product-single/avatar-2.png" alt="">
+                                                </div>
+                                                <div class="avatar-text">
+                                                    <div class="at-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <h5>Roy Banks <span>27 Aug 2019</span></h5>
+                                                    <div class="at-reply">Nice !</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal-rating">
+                                            <h6>Your Ratind</h6>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="leave-comment">
+                                            <h4>Leave A Comment</h4>
+                                            <form action="#" class="comment-form">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <input type="text" placeholder="Name">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" placeholder="Email">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <textarea placeholder="Messages"></textarea>
+                                                        <button type="submit" class="site-btn">Send message</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Shop Section End -->
+
+    <!-- Related Products Section End -->
+    <div class="related-products spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Related Products</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- suggestion products -->
+            
+            <div class="row slider pro" id="products">
+
+            </div>
+            <!-- suggestion products -->
+
+        </div>
+    </div>
+    <!-- Related Products Section End -->
+
+    <!-- Partner Logo Section Begin -->
+
+    <!-- Partner Logo Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-left">
+                <div class="footer-logo">
+                  <a href="/user/shop">
+                    <h4 style="color: white;">
+                      <b><u>MARKET AT DOOR</u></b>
+                    </h4>
+                  </a>
+                </div>
+                <ul>
+                  <li>Phone: +91 8093908739/ 9973215832</li>
+                  <li>Email: official@marketatdoor.in</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+              <div class="footer-widget">
+                <h5>Information</h5>
+                <ul>
+                  <li><a href="/user/aboutus">About Us</a></li>
+                  <li><a href="/user/suggestion">Any suggestions?</a></li>
+                  <li><a href="/user/contactus">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer-widget">
+                <h5>My Account</h5>
+                <ul>
+                  <li><a href="/user/shop">My Account</a></li>
+                  <li><a href="/user/checkout">Checkout</a></li>
+                  <li><a href="/user/showcart">Shopping Cart</a></li>
+                  <li><a href="/user/shop">Shop</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newslatter-item">
+                <h5>Join Our Newsletter Now</h5>
+                <p>
+                  Get E-mail updates about our latest shop and special offers.
+                </p>
+                <form action="/user/newsletter" class="subscribe-form">
+                  <input type="text" placeholder="Enter Your Mail" />
+                  <button type="button">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="/js_ui/jquery-3.3.1.min.js"></script>
+    <script src="/js_ui/bootstrap.min.js"></script>
+    <script src="/js_ui/jquery-ui.min.js"></script>
+    <script src="/js_ui/jquery.countdown.min.js"></script>
+    <script src="/js_ui/jquery.nice-select.min.js"></script>
+    <script src="/js_ui/jquery.zoom.min.js"></script>
+    <script src="/js_ui/jquery.dd.min.js"></script>
+    <script src="/js_ui/jquery.slicknav.js"></script>
+    <script src="/js_ui/owl.carousel.min.js"></script>
+    <script src="/js_ui/main.js"></script>
+    <script src="/myjs/showProductonFooter.js"></script>
+    
+</body>
+
+</html>
